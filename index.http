@@ -1,0 +1,24 @@
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "username":"ramana",
+    "password":"ramana",
+    "email":"ramana@gmail.com",
+    "fullName":"Ramana Datta",
+    "age":22,
+    "gender":"male"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email":"ramana@gmail.com",
+    "password":"ramana"
+}
+
+###
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inl1c3VmQGdtYWlsLmNvbSIsImlhdCI6MTcxNTc2NzE4OH0.BPS-1Xqu9B3hhPW8bjy0reME_7WcDblUnOXaiOAV9qY
